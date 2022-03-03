@@ -56,5 +56,9 @@ fn print_drink(drink: Drink) {
 }
 
 fn main() {
-    let pass = Drink
+    let pass = Drink {
+        flavor: Flavor::Sparklings,
+        fluid_oz: 100.6
+    }
+    print_drink(pass);
 }
