@@ -3,16 +3,13 @@ struct Temperature {
 }
 
 
-let colder = Temperature {
-    degree_f : 89.90
-}
 
 impl Temperature {
-    // fn freezing() -> Self {
-    //     Self {
-    //         degree_f : 32
-    //     }
-    // }
+    fn freezing() -> Self {
+        Self {
+            degree_f : 32
+        }
+    }
     fn show_temp(&self) {
         println!("{:?} degree F" , self.degree_f);
     }
