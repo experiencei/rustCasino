@@ -15,3 +15,18 @@ fn main() {
        Direction::Up => println!("Went Up"),
    }
 }
+
+
+//enum revisited
+
+enum PromoDiscount {
+    NewUser,
+    Holiday(String),
+}
+
+enum Discount {
+    Percents(f64),
+    Flat(i32),
+    Promo(PromoDiscount),
+    Custom(String),
+}
