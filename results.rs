@@ -15,3 +15,26 @@ match sound {
 }
 
 // **_** the underscore used is for ignoring the all others variables. as  we dont what to print the string "alert"
+
+
+#[derive(Debug)]
+enum Menuchoice {
+    MainMenu,
+    Start,
+    Quit
+}
+
+fn get_choices(input: &str) -> Result<Menuchoice , String> {
+    match input {
+        "mainmenu" => Ok(Menuchoice::MainMenu),
+        "start" => Ok(Menuchoice::Start),
+        "quit" => Ok(Menuchoice::Quit),
+        _ => Err("Menu choice not found".to_owned())
+    }
+}
+
+
+fn main() {
+    let choice = get_choices("mainmenu");
+    println!("choice = {:?}", choice);
+}
