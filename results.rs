@@ -37,11 +37,11 @@ fn print_choice(choice: &Menuchoice) {
 }
 
 //question mark operator  **()** is called a uni b type 
-fn pick_choice(input: &str) -> Result<() , String> {
-    let choice: Menuchoice = get_choices(input)?;
-    print_choice(&choice);
-    Ok(())
-}
+    // fn pick_choice(input: &str) -> Result<() , String> {
+    //     let choice: Menuchoice = get_choices(input)?;
+    //     print_choice(&choice);
+    //     Ok(())
+    // }
 fn main() {
 
     // first approach
@@ -55,7 +55,7 @@ fn main() {
     // second approach
   print_choice("start")
 
-   // third approach
+   // third approach for error
    let choice = pick_choice("end");
    println!("choice = {:?}", choice);
 }
