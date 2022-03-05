@@ -24,3 +24,4 @@ fn main() {
 
 
 // the ** & ** in front of the 0 means "when we iterate through the hash map we are only borrowing the values"
+//and the **format** is used to return value and print it out at the same time
