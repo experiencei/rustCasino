@@ -32,9 +32,13 @@ fn get_choices(input: &str) -> Result<Menuchoice , String> {
         _ => Err("Menu choice not found".to_owned())
     }
 }
+fn print_choice(choice: &Menuchoice) {
+    println!("choice = {:?}", choice);
+}
 
 
 fn main() {
     let choice = get_choices("mainmenu");
-    println!("choice = {:?}", choice);
+    // println!("choice = {:?}", choice);
+    print_choice(&choice);
 }
