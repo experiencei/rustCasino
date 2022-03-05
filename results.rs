@@ -10,7 +10,7 @@ fn get_sound(name: &str) -> Result<SoundData , String> {
 let sound = get_sound("alert")
 
 match sound {
-    Ok(_) => println!(" sound data located"),
+    Ok(_) => println!("sound data located"),
     Err(e) => println!("error: {:?}" , e),
 }
 
@@ -46,7 +46,7 @@ fn print_choice(choice: &Menuchoice) {
 fn main() {
 
     // first approach
-    let choice: Result<Menuchoice, _> = get_choices("mainmenu");
+    let choice: Result<Menuchoice, _> =  get_choices("mainmenu");
     match choice {
         Ok(choice) =>  print_choice(&choice),
         Err(e) => println!("erroe = {:?}", e),
