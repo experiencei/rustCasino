@@ -13,3 +13,5 @@ match sound {
     Ok(_) => println!(" sound data located"),
     Err(e) => println!("error: {:?}" , e),
 }
+
+// **_** the underscore used is for ignoring the all others variables. as  we dont what to print the string "alert"
