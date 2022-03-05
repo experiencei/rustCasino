@@ -9,3 +9,6 @@ fn main() {
         println!("{:?}", num);
     }
 }
+
+
+// colllect keywords is used to tell the compiler that it is a vector since iter can be used on various value;
