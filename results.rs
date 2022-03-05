@@ -32,16 +32,17 @@ fn get_choices(input: &str) -> Result<Menuchoice , String> {
         _ => Err("Menu choice not found".to_owned())
     }
 }
+
 fn print_choice(choice: &Menuchoice) {
     println!("choice = {:?}", choice);
 }
 
 //question mark operator  **()** is called a uni b type 
-    // fn pick_choice(input: &str) -> Result<() , String> {
-    //     let choice: Menuchoice = get_choices(input)?;
-    //     print_choice(&choice);
-    //     Ok(())
-    // }
+    fn pick_choice(input: &str) -> Result<() , String> {
+        let choice: Menuchoice = get_choices(input)?;
+        print_choice(&choice);
+        Ok(()) //to return unitype manually
+    }
 fn main() {
 
     // first approach
@@ -53,7 +54,7 @@ fn main() {
     // println!("choice = {:?}", choice);
 
     // second approach
-  print_choice("start")
+    pick_choice("start")
 
    // third approach for error
    let choice = pick_choice("end");
