@@ -48,7 +48,7 @@ fn main() {
     // first approach
     let choice: Result<Menuchoice, _> =  get_choices("mainmenu");
     match choice {
-        Ok(choice) =>  print_choice(&choice),
+        Ok(choice) =>  print_choice(&choice),  
         Err(e) => println!("erroe = {:?}", e),
     }
     // println!("choice = {:?}", choice);
