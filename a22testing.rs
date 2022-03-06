@@ -25,7 +25,7 @@ fn main() {}
 mod test {
     use crate::*;
 
-    #[test]
+    #[test] 
     fn clamp_lower() {
         let result = clamp(10, 100, 1000);
         let expected = 100;
