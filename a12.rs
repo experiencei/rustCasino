@@ -40,6 +40,7 @@ impl ShippingBox {
             dimensions,
         }
     }
+   
 
     fn print(&self) {
         self.color.print();

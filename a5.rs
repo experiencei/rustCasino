@@ -27,3 +27,18 @@ fn main() {
         x += 1;
     }
 }
+
+fn main () {
+    let mut v = 1;
+
+    loop {
+
+
+        println!("{:?}" , v);
+        if v == 4 {
+            break
+        }
+
+        v += 1;
+    }
+}
