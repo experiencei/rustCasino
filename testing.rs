@@ -3,7 +3,7 @@ fn all_caps(word: &str) -> String {
 }
 
 #[cfg(test)]
-mod tests {
+mod test {
     use crate::*;
 
     #[test]
